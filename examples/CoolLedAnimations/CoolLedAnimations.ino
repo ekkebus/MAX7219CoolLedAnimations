@@ -1,3 +1,9 @@
+/*
+ * Created by Swen-Peter Ekkebus, June, 2017. (MIT License)
+ *
+ * CoolLedAnimations library for Arduino (https://github.com/ekkebus/MAX7219CoolLedAnimations)
+ */
+ 
 #include <LedMatrix.h>
 #include <CoolLedAnimations.h>
 

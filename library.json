@@ -1,0 +1,22 @@
+{
+	"name": "CoolLedAnimations",
+	"keywords": "LED, animations, MAX7219, SPI , spinner",
+	"description": "Arduino library for displaying cool animations on your 8x8 LED matrix.",
+	"repository": {
+	"type": "git",
+	"url": "https://github.com/ekkebus/MAX7219CoolLedAnimations.git"
+},
+	"version": "0.2",
+	"authors": {
+	"name": "Swen-Peter Ekkebus",
+	"url": "https://linkedin.com/in/ekkebus"
+},
+"exclude": [
+	"fuzzing",
+	"scripts",
+	"test",
+	"third-party"
+],
+	"frameworks": "arduino",
+	"platforms": "*"
+}

@@ -1,5 +1,5 @@
 /*
- * CoolLedAnimations.cpp - Library for displaying cool animations on your 8x LED matrix.
+ * CoolLedAnimations.cpp - Library for displaying cool animations on your 8x8 LED matrix.
  * Created by Swen-Peter Ekkebus, June, 2017.
  * Released into the public domain.
  */

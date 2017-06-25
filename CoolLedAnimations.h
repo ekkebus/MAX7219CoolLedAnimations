@@ -1,5 +1,5 @@
 /*
- * CoolLedAnimations.h - Library for displaying cool animations on your 8x LED matrix.
+ * CoolLedAnimations.h - Library for displaying cool animations on your 8x8 LED matrix.
  * Created by Swen-Peter Ekkebus, June, 2017.
  * Released into the public domain.
  */
@@ -21,6 +21,9 @@ class CoolLedAnimations{
 	//plays all available animations of this libary
 	void playDemo(LedMatrix ledMatrix);
 	
+	//the method which actually does the real work
+	void playAnimation(LedMatrix ledMatrix, const byte animationFrames[][8], int numberOfFrames, int rounds);
+	
 	//executes the spinner animation once
     void playSpinner(LedMatrix ledMatrix, int rounds);
 	
@@ -33,7 +36,5 @@ class CoolLedAnimations{
   private:
     int _frameDelayMs = 200;	//default delay 200 milliseconds
 	
-	//the private method which actually does the real work
-	void playAnimation(LedMatrix ledMatrix, const byte animationFrames[][8], int numberOfFrames, int rounds);
 };
 #endif
