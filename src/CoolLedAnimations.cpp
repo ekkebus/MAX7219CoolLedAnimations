@@ -25,6 +25,7 @@ CoolLedAnimations::CoolLedAnimations(int frameDelayMs){
 /**
   * This method implements the displaying using the LedMatrix
   *
+  * @LedMatrix			the ledMatrix object which will be used to access the LED matrix
   * @byte[][8] 			animationFrames the two dimensional byte array, containing the frames that will be displayed
   * @numberOfFrames 	the length of the first dimensions of the array, the number of frames
   * @rounds				the number of times the animation will be repeated
@@ -42,11 +43,33 @@ void CoolLedAnimations::playAnimation(LedMatrix ledMatrix, const byte animationF
 	}
 }
 
-
+/**
+  * This method plays all available animations of this library
+  *
+  * @LedMatrix			the ledMatrix object which will be used to access the LED matrix
+  */
 void CoolLedAnimations::playDemo(LedMatrix ledMatrix){
+	setFrameDelay(150);
 	playSpinner(ledMatrix, 2);
 	playDotSpinner(ledMatrix, 2);
 	playGrowingBox(ledMatrix, 2);
+	playWifi(ledMatrix,2);
+	
+	setFrameDelay(250);
+	playHeartbeat(ledMatrix,3);
+	playPacmanGhost(ledMatrix,2);
+	playHappyEmoji(ledMatrix,4);
+	playSpaceInvador(ledMatrix,8);
+	
+	setFrameDelay(350);
+	playBouncingEmoji(ledMatrix,4);
+	
+}
+/**
+  * setter for _frameDelayMs
+  */
+void CoolLedAnimations::setFrameDelay(int frameDelayMs){
+	_frameDelayMs = frameDelayMs;
 }
 
 /**
@@ -65,4 +88,29 @@ void CoolLedAnimations::playDotSpinner(LedMatrix ledMatrix,int rounds){
 
 void CoolLedAnimations::playGrowingBox(LedMatrix ledMatrix,int rounds){
 	playAnimation(ledMatrix, growingBoxAnimation, 4, rounds);
+}
+
+void CoolLedAnimations::playWifi(LedMatrix ledMatrix,int rounds){
+	playAnimation(ledMatrix, wifiAnimation, 12, rounds);
+}
+
+void CoolLedAnimations::playHeartbeat(LedMatrix ledMatrix,int rounds){
+	playAnimation(ledMatrix, heartbeatAnimation, 4, rounds);
+}
+
+void CoolLedAnimations::playPacmanGhost(LedMatrix ledMatrix,int rounds){
+	playAnimation(ledMatrix, pacmanGhostAnimation, 4, rounds);
+}
+
+void CoolLedAnimations::playHappyEmoji(LedMatrix ledMatrix,int rounds){
+	playAnimation(ledMatrix, happyEmojiAnimation, 5, rounds);
+}
+
+void CoolLedAnimations::playBouncingEmoji(LedMatrix ledMatrix,int rounds){
+	playAnimation(ledMatrix, bouncingEmojiAnimation, 7, rounds);
+}
+
+
+void CoolLedAnimations::playSpaceInvador(LedMatrix ledMatrix,int rounds){
+	playAnimation(ledMatrix, spaceInvadorAnimation, 2, rounds);
 }

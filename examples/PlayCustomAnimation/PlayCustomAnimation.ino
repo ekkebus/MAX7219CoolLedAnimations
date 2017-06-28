@@ -50,5 +50,5 @@ void loop()
 {
   CoolLedAnimations ledAnimations = CoolLedAnimations(150);
   //play your custom animation
-  ledAnimations.playAnimation(ledMatrix, customAnimation, 11, 1);
+  ledAnimations.playAnimation(ledMatrix, customAnimation, 27, 1);
 }

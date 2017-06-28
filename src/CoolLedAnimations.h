@@ -21,17 +21,39 @@ class CoolLedAnimations{
 	//plays all available animations of this libary
 	void playDemo(LedMatrix ledMatrix);
 	
+	//sets the frame delay in ms
+	void setFrameDelay(int frameDelayMs);
+	
 	//the method which actually does the real work
 	void playAnimation(LedMatrix ledMatrix, const byte animationFrames[][8], int numberOfFrames, int rounds);
 	
-	//executes the spinner animation once
+	//displays the spinner animation 
     void playSpinner(LedMatrix ledMatrix, int rounds);
 	
-	//executes the spinner animation once
+	//displays the spinning dot animation 
     void playDotSpinner(LedMatrix ledMatrix, int rounds);
 	
-	//executes the spinner animation once
+	//displays the growing box animation
     void playGrowingBox(LedMatrix ledMatrix, int rounds);
+	
+	//displays the connect wifi animation
+    void playWifi(LedMatrix ledMatrix, int rounds);
+	
+	//displays the heartbeat animation
+    void playHeartbeat(LedMatrix ledMatrix, int rounds);
+	
+	//displays the pacman Ghost animation
+    void playPacmanGhost(LedMatrix ledMatrix, int rounds);
+	
+	//displays the happy emoji animation
+    void playHappyEmoji(LedMatrix ledMatrix, int rounds);
+	
+	//displays the space invador animation
+    void playBouncingEmoji(LedMatrix ledMatrix, int rounds);
+	
+	//displays the space invador animation
+    void playSpaceInvador(LedMatrix ledMatrix, int rounds);
+	
 	
   private:
     int _frameDelayMs = 200;	//default delay 200 milliseconds

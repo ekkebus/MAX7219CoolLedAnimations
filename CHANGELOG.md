@@ -1,6 +1,10 @@
 CoolLedAnimations: change log
 =======================
 
+v0.3
+----
+* Added new animations: wifi connecting, heartbeat, pacman ghost, happy emoji, bouncing emoji, space invador
+
 v0.2
 ----
 

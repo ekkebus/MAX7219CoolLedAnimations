@@ -25,5 +25,12 @@ void loop()
   ledAnimations.playSpinner(ledMatrix,1);
   ledAnimations.playDotSpinner(ledMatrix,2);
   ledAnimations.playGrowingBox(ledMatrix,3);
+  
+  ledAnimations.playWifi(ledMatrix,2);
+  ledAnimations.playHeartbeat(ledMatrix,3);
+  ledAnimations.playPacmanGhost(ledMatrix,3);
+  ledAnimations.playHappyEmoji(ledMatrix,2);
+  ledAnimations.playBouncingEmoji(ledMatrix,2);
+  ledAnimations.playSpaceInvador(ledMatrix,3);
 }
 
